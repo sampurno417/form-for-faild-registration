@@ -43,23 +43,23 @@ const studentSchema = new mongoose.Schema(
       type: String,
       enum: ["event1", "event2", "both", "selected"],
     },
-    payment: {
-      //image
-      type: String,
-      required: true,
-    },
     collegeName: {
       type: String,
       required: true,
     },
-    isPaid: {
+    // isPaid: {
+    //   type: Boolean,
+    //   default: false,
+    //   required: true,
+    // },
+    isVerified: {
       type: Boolean,
       default: false,
       required: true,
     },
-    isVerified: {
-      type: Boolean,
-      default: false,
+    payment: {
+      //image
+      type: String,
       required: true,
     },
   },
