@@ -41,6 +41,7 @@ const studentSchema = new mongoose.Schema(
     },
     event: {
       type: String,
+
     },
     collegeName: {
       type: String,
@@ -65,4 +66,4 @@ const studentSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("failed_payment_participants-test-tania", studentSchema);
+module.exports = mongoose.model("faild_payment_participants", studentSchema);
