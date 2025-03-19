@@ -41,7 +41,7 @@ const studentSchema = new mongoose.Schema(
     },
     event: {
       type: String,
-
+      required: true,
     },
     collegeName: {
       type: String,
