@@ -66,4 +66,4 @@ const studentSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("faild_payment_participants", studentSchema);
+module.exports = mongoose.model("faild_payment_participants-tania", studentSchema);
