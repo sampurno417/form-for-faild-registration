@@ -31,6 +31,8 @@
             totalAmount.style.display = "block";
             eventContainer.style.display = "none";
             eventSelect.removeAttribute("required");
+            otherCollegeEvent.setAttribute("required", "required");
+            collegeInputContainer.setAttribute("required", "required");
             note.textContent = "";
             additional.textContent = "";
           } else {
@@ -39,6 +41,9 @@
             totalAmount.style.display = "none";
             eventContainer.style.display = "block";
             eventSelect.setAttribute("required", "required");
+            otherCollegeEvent.removeAttribute("required");
+            collegeInputContainer.removeAttribute("required");
+
             note.textContent =
               "Participation Fee: Event 1 or 2 - ₹500, Both (1+2) - ₹800";
 
@@ -145,7 +150,7 @@
 
               const response = await fetch(
                 "https://form-for-faild-registration-34q8.vercel.app/",
-                 // "http://localhost:4000",
+                //  "http://localhost:4000",
                 {
                   method: "POST",
                   headers: { "Content-Type": "application/json" },
@@ -288,6 +293,7 @@
               id="otherCollege"
               name="otherCollege"
               placeholder="Enter your college name"
+              required
             />
           </div>
 
@@ -362,7 +368,7 @@
 
           <div id="event-container-other" class="label-item hidden">
             <label for="event-other-college">Select Event</label>
-            <div class="checkbox-container">
+            <div class="checkbox-container" required>
               <button
                 type="button"
                 class="checkbox"

@@ -13,9 +13,9 @@ const corsOptions = {
     const allowedOrigins = [
       "https://form-for-faild-registration.vercel.app/", // Frontend's origin
       "https://form-for-faild-registration.vercel.app", // Frontend's origin
-      "http://127.0.0.1:5500", // For local testing
-      "http://127.0.0.1:5500/frontend/index.html",
-      "http://localhost:4000/",
+      // "http://127.0.0.1:5501", // For local testing
+      // "http://127.0.0.1:5501/frontend/index.html",
+      // "http://localhost:4000/",
     ];
     if (allowedOrigins.includes(origin) || !origin) {
       callback(null, true);
